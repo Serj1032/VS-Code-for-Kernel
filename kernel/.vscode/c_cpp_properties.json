@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "forcedInclude": [
+                "${workspaceFolder}/include/generated/autoconf.h"
+            ],
+            "includePath": [
+                "${workspaceFolder}/include/",
+                "${workspaceFolder}/include/generated/",
+                "${workspaceFolder}/drivers/yapbus/",
+                "${workspaceFolder}/drivers/yapbus/protocol/",
+                "${workspaceFolder}/drivers/yapbus/protocol/yapbus_core/"
+            ],
+            "defines": [
+                "__KERNEL__=1"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c89",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "yapbus",
+			"path": "../drivers/yapbus"
+		},
+		{
+			"name": "yap_kernel_goldfish",
+			"path": "../"
+		},
+		{
+			"name": "manifests",
+			"path": "../../../.repo/manifests"
+		},
+		{
+			"name": "can-utils",
+			"path": "../../../vendor/yandex/socketcan/canutils"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.c": "c",
+			"*.h": "c",
+		},
+		"C_Cpp.default.forcedInclude": [
+			"${workspaceFolder}/include/generated/autoconf.h"
+		],
+		"C_Cpp.clang_format_path": "/usr/bin/clang-format-6.0",
+		"editor.rulers": [
+			80,
+			120
+		],
+		"editor.formatOnType": true,
+		"editor.formatOnSave": true,
+	}
+}

@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gdb vmlinux lunch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/vmlinux",
+            "miDebuggerServerAddress": "localhost:1234",
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "linux": {
+                "MIMode": "gdb",
+            },
+            "osx": {
+                "MIMode": "gdb"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            },
+            "targetArchitecture": "x64",
+            "launchCompleteCommand": "None",
+            "serverLaunchTimeout": "100000",
+            "customLaunchSetupCommands": [
+                {
+                    "description": "Change directory",
+                    "text": "cd ${workspaceFolder}"
+                },
+                {
+                    "description": "Set remote target",
+                    "text": "file vmlinux"
+                },
+                {
+                    "description": "Set remote target",
+                    "text": "target remote localhost:1234"
+                },
+                {
+                    "description": "set start breakepoint",
+                    "text": "hbreak start_kernel"
+                },
+            ]
+        }
+    ]
+}

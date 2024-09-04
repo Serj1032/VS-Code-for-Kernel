@@ -1,0 +1,5 @@
+config BR2_PACKAGE_KMOD_TEMPLATE
+    bool "Kernel module template"
+    default n
+    help
+        Template kernel module
